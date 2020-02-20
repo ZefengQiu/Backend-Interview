@@ -7,5 +7,6 @@ I used Node js with Express to create this backend API.
 
 ## How to run the project
 
-npm install (install packages)
-npm start
+* npm install (install packages)
+
+* npm start
