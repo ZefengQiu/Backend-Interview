@@ -2,7 +2,7 @@
 
 import mongoose, { Schema } from 'mongoose';
 
-const PlayerSchema = new Schema({
+const THSchema = new Schema({
     name:{
         type: String,
         required: ""
@@ -11,13 +11,11 @@ const PlayerSchema = new Schema({
         type: String,
         required: ""
     },
-    pos: {
+    age: {
         type: String,
         required: ""
     },
 
-    // ... etc players attribute
-
 });
 
-export default mongoose.model('Player', PlayerSchema);
+export default mongoose.model('th', THSchema);

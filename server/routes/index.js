@@ -1,9 +1,9 @@
-const playerController = require('../controllers/playerController');
+const thController = require('../controllers/playerController');
 
 module.exports = function(app) {
     app.route('/player')
-        .get(playerController.getPlayerFromName);
+        .get(thController.getModelBasedOnID);
 
     app.route('/players')
-        .get(playerController.getPlayers);
+        .get(thController.getModels);
 };
