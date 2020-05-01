@@ -10,6 +10,8 @@ I used Node js with Express to create this backend API.
 * npm install (install packages)
 * npm start
 
+* npm run test (run unit test)
+
 ## How to test the result
 
 Using Postman (or similar tool to test API). Open Postman, root URL is localhost:8080/
