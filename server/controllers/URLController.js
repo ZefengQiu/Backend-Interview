@@ -21,6 +21,7 @@ exports.shortenURL = function(req, res) {
             longToShortDic[longUrl] = shortUrl;
             shortToLongDic[shortUrl] = longUrl;
             codeToLongDic[urlCode] = longUrl;
+            visited[urlCode] = 0;
             res.json({"short link:": shortUrl});
         }
     } else {
@@ -29,17 +30,15 @@ exports.shortenURL = function(req, res) {
 };
 
 //follow a short link to destination
-exports.getShortLink = function(req, res) {
+exports.visitShortLink = function(req, res) {
     const urlCode = req.params.code;
     const longUrl = codeToLongDic[urlCode];
     if(longUrl) {
         //for reporting
         let number = visited[urlCode];
-        if(number > 0) {
+        if(number >= 0) {
             number += 1;
             visited[urlCode] = number
-        } else {
-            visited[urlCode] = 1;
         }
 
         res.redirect(longUrl);

@@ -11,6 +11,6 @@ This project is for ResQ interview, URL shortener API
 
 ## How to test the result
 
-Using Postman (or similar tool to test API). Open Postman, root URL is localhost:8080/
+Using Postman, import file - URLShortener.postman_collection.json to Postman.
 
 

@@ -8,7 +8,7 @@ module.exports = function(app) {
         .delete(urlController.deleteShortLink);
 
     app.route('/:code')
-        .get(urlController.getShortLink);
+        .get(urlController.visitShortLink);
 
     app.route('/shorten-url/report')
         .get(urlController.reportVisitedLink)
