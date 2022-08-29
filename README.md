@@ -1,7 +1,7 @@
 # Backend Interview
 
 ## Description
-This project is for ResQ interview, URL shortener API
+This project is for interview, URL shortener API
 
 ## How to run the project
 
